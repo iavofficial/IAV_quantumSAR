@@ -36,7 +36,7 @@ limitations under the License.
 
 ## AUTOSAR
 
-QuantumSAR should supporting the AUTOSAR Version [R22-11](https://www.autosar.org/fileadmin/standards/R22-11/CP/AUTOSAR_SWS_CryptoDriver.pdf). 
+QuantumSAR should support the AUTOSAR Version [R22-11](https://www.autosar.org/fileadmin/standards/R22-11/CP/AUTOSAR_SWS_CryptoDriver.pdf). 
 
 ## MISRA
 QuantumSAR and the post-quantum cryptographic algorithms are checked with the 2012 version of [MISRA](https://misra.org.uk/app/uploads/2021/06/MISRA-C-2012-Permits-First-Edition.pdf).
