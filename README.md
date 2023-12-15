@@ -8,10 +8,10 @@ There was no security risk analysis like TARA or similar carried out for Quantum
 The base of IAV quantumSAR is the PQCleanAutomotive repository. It includes the following post-quantum cryptographic algorithms:
 
 * CRYSTALS-KYBER
+* CRYSTALS-DILITHIUM
 
 The following post-quantum cryptographic algorithms are in work:
 
-* CRYSTALS-DILITHIUM
 * FALCON
 * SPHINCS+
 
