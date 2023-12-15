@@ -41,5 +41,6 @@
 /* PUBLIC FUNCTION PROTOTYPES                                                                                         */
 /**********************************************************************************************************************/
 void FsmSw_Crypto_KyberTest(void);
+void FsmSw_Crypto_DilithiumTest(void);
 
 #endif /* CRYPTO_H */
