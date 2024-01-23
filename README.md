@@ -2,7 +2,7 @@
 IAV quantumSAR is planned as an AUTOSAR Cryptodriver with a collection of post-quantum cryptographic algorithms for microcontroller presented by [IAV GmbH](https://www.iav.com/). The post-quantum cryptographic algorithms are based on the [PQClean](https://github.com/PQClean/PQClean) repository, which is a clean collection of the [NIST post-quantum project](https://csrc.nist.gov/projects/post-quantum-cryptography). IAV quantumSAR implements these algorithms to use them for automotive microcontrollers in an AUTOSAR Classic environment. The goal is to have a collection of various cryptographic algorithms for future automotive cybersecurity projects preparing for the upcoming computing power of quantum computers.
 
 ## Security Note
-There was no security risk analysis like TARA or similar carried out for QuantumSAR. The post-quantum cryptographic algorithms itself were evaluated by NIST.
+There was no security risk analysis like TARA or similar carried out for quantumSAR. The post-quantum cryptographic algorithms itself were evaluated by NIST.
 
 ## Content
 The base of IAV quantumSAR is the PQCleanAutomotive repository. It includes the following post-quantum cryptographic algorithms:
@@ -36,10 +36,10 @@ limitations under the License.
 
 ## AUTOSAR
 
-QuantumSAR should support the AUTOSAR Version [R22-11](https://www.autosar.org/fileadmin/standards/R22-11/CP/AUTOSAR_SWS_CryptoDriver.pdf). 
+quantumSAR should support the AUTOSAR Version [R22-11](https://www.autosar.org/fileadmin/standards/R22-11/CP/AUTOSAR_SWS_CryptoDriver.pdf). 
 
 ## MISRA
-QuantumSAR and the post-quantum cryptographic algorithms are checked with the 2012 version of [MISRA](https://misra.org.uk/app/uploads/2021/06/MISRA-C-2012-Permits-First-Edition.pdf).
+quantumSAR and the post-quantum cryptographic algorithms are checked with the 2012 version of [MISRA](https://misra.org.uk/app/uploads/2021/06/MISRA-C-2012-Permits-First-Edition.pdf).
 
 ## Patent
 The Encryption PQC algorithm CRYSTALS-KYBER is one of the candidate algorithms for public-key post-quantum standards. There are two patent portfolios listed in a patent license agreement published by NIST.  
