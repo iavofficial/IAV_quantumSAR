@@ -40,7 +40,7 @@
 /**********************************************************************************************************************/
 /* PUBLIC FUNCTION PROTOTYPES                                                                                         */
 /**********************************************************************************************************************/
-void FsmSw_Crypto_KyberTest(void);
-void FsmSw_Crypto_DilithiumTest(void);
+void FsmSw_Crypto_KeyEncapsulationMechanismTest(void);
+void FsmSw_Crypto_DigitalSignatureTest(void);
 
 #endif /* CRYPTO_H */
