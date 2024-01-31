@@ -9,18 +9,20 @@ The base of IAV quantumSAR is the PQCleanAutomotive repository. It includes the 
 
 * CRYSTALS-KYBER
 * CRYSTALS-DILITHIUM
+* SPHINCS+
 
 The following post-quantum cryptographic algorithms are in work:
 
 * FALCON
-* SPHINCS+
 
 ## Implementation
-For the integration of IAV quantumSAR, the file Crypto.c contains an example of the use of the CRYSTALS-KYBER algorithm.
+For the integration of IAV quantumSAR, the file Crypto.c contains an example of the use of the CRYSTALS-KYBER, CRYSTALS-DILITHIUM and SPHINCS+ algorithm.
+
+In the SPHINCS+ algorithm, dynamic arrays had to be replaced by static arrays in various functions for the microcontroller implementation.
 
 ## License
 
-Copyright [2023] [IAV GmbH]
+Copyright [2024] [IAV GmbH]
 
 Licensed under the Apache License, Version 2.0 (the "License");\
 you may not use this file except in compliance with the License.\
