@@ -29,7 +29,7 @@
 /* #define KYBER1024 */
 
 /* Digital signatures */
-#define DILITHIUM2
+/* #define DILITHIUM2 */
 /* #define DILITHIUM3 */
 /* #define DILITHIUM5 */
 /* #define SPHINCS_SHA2_128FSIMPLE */
@@ -44,6 +44,8 @@
 /* #define SPHINCS_SHAKE_192SSIMPLE */
 /* #define SPHINCS_SHAKE_256FSIMPLE */
 /* #define SPHINCS_SHAKE_256SSIMPLE */
+/* #define FALCON512 */
+#define FALCON1024
 
 #if (defined KYBER512)
         #include "FsmSw_CommonLib.h"
@@ -285,6 +287,30 @@
         #define crypto_sign_verify      FsmSw_SphincsShake_256sSimple_crypto_sign_verify
         #define crypto_sign             FsmSw_SphincsShake_256sSimple_crypto_sign
         #define crypto_sign_open        FsmSw_SphincsShake_256sSimple_crypto_sign_open
+
+#elif (defined FALCON512)
+        #include "FsmSw_CommonLib.h"
+        #include "FsmSw_Falcon512_api.h"
+        #define CRYPTO_PUBLICKEYBYTES   FSMSW_FALCON512_CRYPTO_PUBLICKEYBYTES
+        #define CRYPTO_SECRETKEYBYTES   FSMSW_FALCON512_CRYPTO_SECRETKEYBYTES
+        #define CRYPTO_BYTES            FSMSW_FALCON512_CRYPTO_BYTES
+        #define crypto_sign_keypair     FsmSw_Falcon512_crypto_sign_keypair
+        #define crypto_sign_signature   FsmSw_Falcon512_crypto_sign_signature
+        #define crypto_sign_verify      FsmSw_Falcon512_crypto_sign_verify
+        #define crypto_sign             FsmSw_Falcon512_crypto_sign
+        #define crypto_sign_open        FsmSw_Falcon512_crypto_sign_open
+
+#elif (defined FALCON1024)
+       #include "FsmSw_CommonLib.h"
+       #include "FsmSw_Falcon1024_api.h"
+       #define CRYPTO_PUBLICKEYBYTES   FSMSW_FALCON1024_CRYPTO_PUBLICKEYBYTES
+       #define CRYPTO_SECRETKEYBYTES   FSMSW_FALCON1024_CRYPTO_SECRETKEYBYTES
+       #define CRYPTO_BYTES            FSMSW_FALCON1024_CRYPTO_BYTES
+       #define crypto_sign_keypair     FsmSw_Falcon1024_crypto_sign_keypair
+       #define crypto_sign_signature   FsmSw_Falcon1024_crypto_sign_signature
+       #define crypto_sign_verify      FsmSw_Falcon1024_crypto_sign_verify
+       #define crypto_sign             FsmSw_Falcon1024_crypto_sign
+       #define crypto_sign_open        FsmSw_Falcon1024_crypto_sign_open
 #endif
 
 /**********************************************************************************************************************/
