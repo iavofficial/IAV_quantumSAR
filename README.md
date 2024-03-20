@@ -10,9 +10,6 @@ The base of IAV quantumSAR is the PQCleanAutomotive repository. It includes the 
 * CRYSTALS-KYBER
 * CRYSTALS-DILITHIUM
 * SPHINCS+
-
-The following post-quantum cryptographic algorithms are in work:
-
 * FALCON
 
 ## Implementation
@@ -41,7 +38,7 @@ limitations under the License.
 IAV quantumSAR should support the AUTOSAR Version [R22-11](https://www.autosar.org/fileadmin/standards/R22-11/CP/AUTOSAR_SWS_CryptoDriver.pdf). 
 
 ## MISRA
-IAV quantumSAR and the post-quantum cryptographic algorithms are checked with the 2012 version of [MISRA](https://misra.org.uk/app/uploads/2021/06/MISRA-C-2012-Permits-First-Edition.pdf).
+IAV quantumSAR and the post-quantum cryptographic algorithms are checked with the 2012 version of [MISRA](https://misra.org.uk/app/uploads/2021/06/MISRA-C-2012-Permits-First-Edition.pdf). Not all MISRA findings could be resolved. An explanation has been written in the relevant places.
 
 ## Patent
 The Encryption PQC algorithm CRYSTALS-KYBER is one of the candidate algorithms for public-key post-quantum standards. There are two patent portfolios listed in a patent license agreement published by NIST.  
