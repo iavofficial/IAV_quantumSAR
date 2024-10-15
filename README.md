@@ -42,8 +42,3 @@ IAV quantumSAR should support the AUTOSAR Version [R22-11](https://www.autosar.o
 
 ## MISRA
 IAV quantumSAR and the post-quantum cryptographic algorithms are checked with the 2012 version of [MISRA](https://misra.org.uk/app/uploads/2021/06/MISRA-C-2012-Permits-First-Edition.pdf). Not all MISRA findings could be resolved. An explanation has been written in the relevant places.
-
-## Patent
-The Encryption PQC algorithm CRYSTALS-KYBER is one of the candidate algorithms for public-key post-quantum standards. There are two patent portfolios listed in a patent license agreement published by NIST.  
-https://csrc.nist.gov/csrc/media/Projects/post-quantum-cryptography/documents/selected-algos-2022/nist-pqc-license-summary-and-excerpts.pdf
-Please check the license condition before any commercial implementation. IAV isn’t owner, applicant, licensor or sub-licensor of the patent portfolios. It is any implementers sole responsibility to do the final license check for all implementations of CRYSTALS-KYBER. IAV is not responsible for possible infringements of third party rights.
