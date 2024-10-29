@@ -29,7 +29,7 @@
 /* #define KYBER1024 */
 
 /* Digital signatures */
-/* #define DILITHIUM2 */
+#define DILITHIUM2
 /* #define DILITHIUM3 */
 /* #define DILITHIUM5 */
 /* #define SPHINCS_SHA2_128FSIMPLE */
@@ -45,7 +45,7 @@
 /* #define SPHINCS_SHAKE_256FSIMPLE */
 /* #define SPHINCS_SHAKE_256SSIMPLE */
 /* #define FALCON512 */
-#define FALCON1024
+/* #define FALCON1024 */
 
 #if (defined KYBER512)
         #include "FsmSw_CommonLib.h"
@@ -136,9 +136,9 @@
         #include "FsmSw_CommonLib.h"
         #include "FsmSw_SphincsSha2_128fSimple_sign.h"
         #include "FsmSw_SphincsSha2_128fSimple_params.h"
-        #define CRYPTO_PUBLICKEYBYTES   FSMSW_SPHINCSSHA2_128FSIMPLE_CRYPTO_PUBLICKEYBYTES
-        #define CRYPTO_SECRETKEYBYTES   FSMSW_SPHINCSSHA2_128FSIMPLE_CRYPTO_SECRETKEYBYTES
-        #define CRYPTO_BYTES            FSMSW_SPHINCSSHA2_128FSIMPLE_CRYPTO_BYTES
+        #define CRYPTO_PUBLICKEYBYTES   FSMSW_SPHINCSSHA2_128FSIMPLE_PK_BYTES
+        #define CRYPTO_SECRETKEYBYTES   FSMSW_SPHINCSSHA2_128FSIMPLE_SK_BYTES
+        #define CRYPTO_BYTES            FSMSW_SPHINCSSHA2_128FSIMPLE_BYTES
         #define crypto_sign_keypair     FsmSw_SphincsSha2_128fSimple_crypto_sign_keypair
         #define crypto_sign_signature   FsmSw_SphincsSha2_128fSimple_crypto_sign_signature
         #define crypto_sign_verify      FsmSw_SphincsSha2_128fSimple_crypto_sign_verify
@@ -149,9 +149,9 @@
         #include "FsmSw_CommonLib.h"
         #include "FsmSw_SphincsSha2_128sSimple_sign.h"
         #include "FsmSw_SphincsSha2_128sSimple_params.h"
-        #define CRYPTO_PUBLICKEYBYTES   FSMSW_SPHINCSSHA2_128SSIMPLE_CRYPTO_PUBLICKEYBYTES
-        #define CRYPTO_SECRETKEYBYTES   FSMSW_SPHINCSSHA2_128SSIMPLE_CRYPTO_SECRETKEYBYTES
-        #define CRYPTO_BYTES            FSMSW_SPHINCSSHA2_128SSIMPLE_CRYPTO_BYTES
+        #define CRYPTO_PUBLICKEYBYTES   FSMSW_SPHINCSSHA2_128SSIMPLE_PK_BYTES
+        #define CRYPTO_SECRETKEYBYTES   FSMSW_SPHINCSSHA2_128SSIMPLE_SK_BYTES
+        #define CRYPTO_BYTES            FSMSW_SPHINCSSHA2_128SSIMPLE_BYTES
         #define crypto_sign_keypair     FsmSw_SphincsSha2_128sSimple_crypto_sign_keypair
         #define crypto_sign_signature   FsmSw_SphincsSha2_128sSimple_crypto_sign_signature
         #define crypto_sign_verify      FsmSw_SphincsSha2_128sSimple_crypto_sign_verify
@@ -162,9 +162,9 @@
         #include "FsmSw_CommonLib.h"
         #include "FsmSw_SphincsSha2_192fSimple_sign.h"
         #include "FsmSw_SphincsSha2_192fSimple_params.h"
-        #define CRYPTO_PUBLICKEYBYTES   FSMSW_SPHINCSSHA2_192FSIMPLE_CRYPTO_PUBLICKEYBYTES
-        #define CRYPTO_SECRETKEYBYTES   FSMSW_SPHINCSSHA2_192FSIMPLE_CRYPTO_SECRETKEYBYTES
-        #define CRYPTO_BYTES            FSMSW_SPHINCSSHA2_192FSIMPLE_CRYPTO_BYTES
+        #define CRYPTO_PUBLICKEYBYTES   FSMSW_SPHINCSSHA2_192FSIMPLE_PK_BYTES
+        #define CRYPTO_SECRETKEYBYTES   FSMSW_SPHINCSSHA2_192FSIMPLE_SK_BYTES
+        #define CRYPTO_BYTES            FSMSW_SPHINCSSHA2_192FSIMPLE_BYTES
         #define crypto_sign_keypair     FsmSw_SphincsSha2_192fSimple_crypto_sign_keypair
         #define crypto_sign_signature   FsmSw_SphincsSha2_192fSimple_crypto_sign_signature
         #define crypto_sign_verify      FsmSw_SphincsSha2_192fSimple_crypto_sign_verify
@@ -175,9 +175,9 @@
         #include "FsmSw_CommonLib.h"
         #include "FsmSw_SphincsSha2_192sSimple_sign.h"
         #include "FsmSw_SphincsSha2_192sSimple_params.h"
-        #define CRYPTO_PUBLICKEYBYTES   FSMSW_SPHINCSSHA2_192SSIMPLE_CRYPTO_PUBLICKEYBYTES
-        #define CRYPTO_SECRETKEYBYTES   FSMSW_SPHINCSSHA2_192SSIMPLE_CRYPTO_SECRETKEYBYTES
-        #define CRYPTO_BYTES            FSMSW_SPHINCSSHA2_192SSIMPLE_CRYPTO_BYTES
+        #define CRYPTO_PUBLICKEYBYTES   FSMSW_SPHINCSSHA2_192SSIMPLE_PK_BYTES
+        #define CRYPTO_SECRETKEYBYTES   FSMSW_SPHINCSSHA2_192SSIMPLE_SK_BYTES
+        #define CRYPTO_BYTES            FSMSW_SPHINCSSHA2_192SSIMPLE_BYTES
         #define crypto_sign_keypair     FsmSw_SphincsSha2_192sSimple_crypto_sign_keypair
         #define crypto_sign_signature   FsmSw_SphincsSha2_192sSimple_crypto_sign_signature
         #define crypto_sign_verify      FsmSw_SphincsSha2_192sSimple_crypto_sign_verify
@@ -188,9 +188,9 @@
         #include "FsmSw_CommonLib.h"
         #include "FsmSw_SphincsSha2_256fSimple_sign.h"
         #include "FsmSw_SphincsSha2_256fSimple_params.h"
-        #define CRYPTO_PUBLICKEYBYTES   FSMSW_SPHINCSSHA2_256FSIMPLE_CRYPTO_PUBLICKEYBYTES
-        #define CRYPTO_SECRETKEYBYTES   FSMSW_SPHINCSSHA2_256FSIMPLE_CRYPTO_SECRETKEYBYTES
-        #define CRYPTO_BYTES            FSMSW_SPHINCSSHA2_256FSIMPLE_CRYPTO_BYTES
+        #define CRYPTO_PUBLICKEYBYTES   FSMSW_SPHINCSSHA2_256FSIMPLE_PK_BYTES
+        #define CRYPTO_SECRETKEYBYTES   FSMSW_SPHINCSSHA2_256FSIMPLE_SK_BYTES
+        #define CRYPTO_BYTES            FSMSW_SPHINCSSHA2_256FSIMPLE_BYTES
         #define crypto_sign_keypair     FsmSw_SphincsSha2_256fSimple_crypto_sign_keypair
         #define crypto_sign_signature   FsmSw_SphincsSha2_256fSimple_crypto_sign_signature
         #define crypto_sign_verify      FsmSw_SphincsSha2_256fSimple_crypto_sign_verify
@@ -201,9 +201,9 @@
         #include "FsmSw_CommonLib.h"
         #include "FsmSw_SphincsSha2_256sSimple_sign.h"
         #include "FsmSw_SphincsSha2_256sSimple_params.h"
-        #define CRYPTO_PUBLICKEYBYTES   FSMSW_SPHINCSSHA2_256SSIMPLE_CRYPTO_PUBLICKEYBYTES
-        #define CRYPTO_SECRETKEYBYTES   FSMSW_SPHINCSSHA2_256SSIMPLE_CRYPTO_SECRETKEYBYTES
-        #define CRYPTO_BYTES            FSMSW_SPHINCSSHA2_256SSIMPLE_CRYPTO_BYTES
+        #define CRYPTO_PUBLICKEYBYTES   FSMSW_SPHINCSSHA2_256SSIMPLE_PK_BYTES
+        #define CRYPTO_SECRETKEYBYTES   FSMSW_SPHINCSSHA2_256SSIMPLE_SK_BYTES
+        #define CRYPTO_BYTES            FSMSW_SPHINCSSHA2_256SSIMPLE_BYTES
         #define crypto_sign_keypair     FsmSw_SphincsSha2_256sSimple_crypto_sign_keypair
         #define crypto_sign_signature   FsmSw_SphincsSha2_256sSimple_crypto_sign_signature
         #define crypto_sign_verify      FsmSw_SphincsSha2_256sSimple_crypto_sign_verify
@@ -214,9 +214,9 @@
         #include "FsmSw_CommonLib.h"
         #include "FsmSw_SphincsShake_128fSimple_sign.h"
         #include "FsmSw_SphincsShake_128fSimple_params.h"
-        #define CRYPTO_PUBLICKEYBYTES   FSMSW_SPHINCSSHAKE_128FSIMPLE_CRYPTO_PUBLICKEYBYTES
-        #define CRYPTO_SECRETKEYBYTES   FSMSW_SPHINCSSHAKE_128FSIMPLE_CRYPTO_SECRETKEYBYTES
-        #define CRYPTO_BYTES            FSMSW_SPHINCSSHAKE_128FSIMPLE_CRYPTO_BYTES
+        #define CRYPTO_PUBLICKEYBYTES   FSMSW_SPHINCSSHAKE_128FSIMPLE_PK_BYTES
+        #define CRYPTO_SECRETKEYBYTES   FSMSW_SPHINCSSHAKE_128FSIMPLE_SK_BYTES
+        #define CRYPTO_BYTES            FSMSW_SPHINCSSHAKE_128FSIMPLE_BYTES
         #define crypto_sign_keypair     FsmSw_SphincsShake_128fSimple_crypto_sign_keypair
         #define crypto_sign_signature   FsmSw_SphincsShake_128fSimple_crypto_sign_signature
         #define crypto_sign_verify      FsmSw_SphincsShake_128fSimple_crypto_sign_verify
@@ -227,9 +227,9 @@
         #include "FsmSw_CommonLib.h"
         #include "FsmSw_SphincsShake_128sSimple_sign.h"
         #include "FsmSw_SphincsShake_128sSimple_params.h"
-        #define CRYPTO_PUBLICKEYBYTES   FSMSW_SPHINCSSHAKE_128SSIMPLE_CRYPTO_PUBLICKEYBYTES
-        #define CRYPTO_SECRETKEYBYTES   FSMSW_SPHINCSSHAKE_128SSIMPLE_CRYPTO_SECRETKEYBYTES
-        #define CRYPTO_BYTES            FSMSW_SPHINCSSHAKE_128SSIMPLE_CRYPTO_BYTES
+        #define CRYPTO_PUBLICKEYBYTES   FSMSW_SPHINCSSHAKE_128SSIMPLE_PK_BYTES
+        #define CRYPTO_SECRETKEYBYTES   FSMSW_SPHINCSSHAKE_128SSIMPLE_SK_BYTES
+        #define CRYPTO_BYTES            FSMSW_SPHINCSSHAKE_128SSIMPLE_BYTES
         #define crypto_sign_keypair     FsmSw_SphincsShake_128sSimple_crypto_sign_keypair
         #define crypto_sign_signature   FsmSw_SphincsShake_128sSimple_crypto_sign_signature
         #define crypto_sign_verify      FsmSw_SphincsShake_128sSimple_crypto_sign_verify
@@ -240,9 +240,9 @@
         #include "FsmSw_CommonLib.h"
         #include "FsmSw_SphincsShake_192fSimple_sign.h"
         #include "FsmSw_SphincsShake_192fSimple_params.h"
-        #define CRYPTO_PUBLICKEYBYTES   FSMSW_SPHINCSSHAKE_192FSIMPLE_CRYPTO_PUBLICKEYBYTES
-        #define CRYPTO_SECRETKEYBYTES   FSMSW_SPHINCSSHAKE_192FSIMPLE_CRYPTO_SECRETKEYBYTES
-        #define CRYPTO_BYTES            FSMSW_SPHINCSSHAKE_192FSIMPLE_CRYPTO_BYTES
+        #define CRYPTO_PUBLICKEYBYTES   FSMSW_SPHINCSSHAKE_192FSIMPLE_PK_BYTES
+        #define CRYPTO_SECRETKEYBYTES   FSMSW_SPHINCSSHAKE_192FSIMPLE_SK_BYTES
+        #define CRYPTO_BYTES            FSMSW_SPHINCSSHAKE_192FSIMPLE_BYTES
         #define crypto_sign_keypair     FsmSw_SphincsShake_192fSimple_crypto_sign_keypair
         #define crypto_sign_signature   FsmSw_SphincsShake_192fSimple_crypto_sign_signature
         #define crypto_sign_verify      FsmSw_SphincsShake_192fSimple_crypto_sign_verify
@@ -253,9 +253,9 @@
         #include "FsmSw_CommonLib.h"
         #include "FsmSw_SphincsShake_192sSimple_sign.h"
         #include "FsmSw_SphincsShake_192sSimple_params.h"
-        #define CRYPTO_PUBLICKEYBYTES   FSMSW_SPHINCSSHAKE_192SSIMPLE_CRYPTO_PUBLICKEYBYTES
-        #define CRYPTO_SECRETKEYBYTES   FSMSW_SPHINCSSHAKE_192SSIMPLE_CRYPTO_SECRETKEYBYTES
-        #define CRYPTO_BYTES            FSMSW_SPHINCSSHAKE_192SSIMPLE_CRYPTO_BYTES
+        #define CRYPTO_PUBLICKEYBYTES   FSMSW_SPHINCSSHAKE_192SSIMPLE_PK_BYTES
+        #define CRYPTO_SECRETKEYBYTES   FSMSW_SPHINCSSHAKE_192SSIMPLE_SK_BYTES
+        #define CRYPTO_BYTES            FSMSW_SPHINCSSHAKE_192SSIMPLE_BYTES
         #define crypto_sign_keypair     FsmSw_SphincsShake_192sSimple_crypto_sign_keypair
         #define crypto_sign_signature   FsmSw_SphincsShake_192sSimple_crypto_sign_signature
         #define crypto_sign_verify      FsmSw_SphincsShake_192sSimple_crypto_sign_verify
@@ -266,9 +266,9 @@
         #include "FsmSw_CommonLib.h"
         #include "FsmSw_SphincsShake_256fSimple_sign.h"
         #include "FsmSw_SphincsShake_256fSimple_params.h"
-        #define CRYPTO_PUBLICKEYBYTES   FSMSW_SPHINCSSHAKE_256FSIMPLE_CRYPTO_PUBLICKEYBYTES
-        #define CRYPTO_SECRETKEYBYTES   FSMSW_SPHINCSSHAKE_256FSIMPLE_CRYPTO_SECRETKEYBYTES
-        #define CRYPTO_BYTES            FSMSW_SPHINCSSHAKE_256FSIMPLE_CRYPTO_BYTES
+        #define CRYPTO_PUBLICKEYBYTES   FSMSW_SPHINCSSHAKE_256FSIMPLE_PK_BYTES
+        #define CRYPTO_SECRETKEYBYTES   FSMSW_SPHINCSSHAKE_256FSIMPLE_SK_BYTES
+        #define CRYPTO_BYTES            FSMSW_SPHINCSSHAKE_256FSIMPLE_BYTES
         #define crypto_sign_keypair     FsmSw_SphincsShake_256fSimple_crypto_sign_keypair
         #define crypto_sign_signature   FsmSw_SphincsShake_256fSimple_crypto_sign_signature
         #define crypto_sign_verify      FsmSw_SphincsShake_256fSimple_crypto_sign_verify
@@ -279,9 +279,9 @@
         #include "FsmSw_CommonLib.h"
         #include "FsmSw_SphincsShake_256sSimple_sign.h"
         #include "FsmSw_SphincsShake_256sSimple_params.h"
-        #define CRYPTO_PUBLICKEYBYTES   FSMSW_SPHINCSSHAKE_256SSIMPLE_CRYPTO_PUBLICKEYBYTES
-        #define CRYPTO_SECRETKEYBYTES   FSMSW_SPHINCSSHAKE_256SSIMPLE_CRYPTO_SECRETKEYBYTES
-        #define CRYPTO_BYTES            FSMSW_SPHINCSSHAKE_256SSIMPLE_CRYPTO_BYTES
+        #define CRYPTO_PUBLICKEYBYTES   FSMSW_SPHINCSSHAKE_256SSIMPLE_PK_BYTES
+        #define CRYPTO_SECRETKEYBYTES   FSMSW_SPHINCSSHAKE_256SSIMPLE_SK_BYTES
+        #define CRYPTO_BYTES            FSMSW_SPHINCSSHAKE_256SSIMPLE_BYTES
         #define crypto_sign_keypair     FsmSw_SphincsShake_256sSimple_crypto_sign_keypair
         #define crypto_sign_signature   FsmSw_SphincsShake_256sSimple_crypto_sign_signature
         #define crypto_sign_verify      FsmSw_SphincsShake_256sSimple_crypto_sign_verify
